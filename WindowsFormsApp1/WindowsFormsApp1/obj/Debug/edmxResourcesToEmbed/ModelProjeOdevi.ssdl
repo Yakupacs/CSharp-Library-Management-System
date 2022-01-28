@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ProjeModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tbl_Emanet">
+    <Key>
+      <PropertyRef Name="EmanetID" />
+    </Key>
+    <Property Name="EmanetID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmanetKitapID" Type="int" Nullable="false" />
+    <Property Name="EmanetUyeTC" Type="bigint" Nullable="false" />
+    <Property Name="EmanetPersonelID" Type="int" Nullable="false" />
+    <Property Name="EmanetVerilenTarih" Type="date" />
+    <Property Name="EmanetAlınanTarih" Type="date" />
+  </EntityType>
+  <EntityType Name="tbl_Kitap">
+    <Key>
+      <PropertyRef Name="KitapID" />
+    </Key>
+    <Property Name="KitapID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="KitapAdı" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="KitapYazarı" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="KitapYayınevi" Type="nvarchar" MaxLength="50" />
+    <Property Name="KitapSayfaSayısı" Type="int" />
+    <Property Name="KitapKategori" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tbl_Personel">
+    <Key>
+      <PropertyRef Name="PersonelID" />
+    </Key>
+    <Property Name="PersonelID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PersonelAdı" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="PersonelSoyadı" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="PersonelTC" Type="bigint" Nullable="false" />
+    <Property Name="PersonelTelefon" Type="bigint" Nullable="false" />
+    <Property Name="PersonelAçıkAdres" Type="nvarchar" MaxLength="50" />
+    <Property Name="PersonelMail" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tbl_PersonelGiriş">
+    <Key>
+      <PropertyRef Name="PersonelGirişID" />
+    </Key>
+    <Property Name="PersonelGirişID" Type="int" Nullable="false" />
+    <Property Name="PersonelGirişŞifre" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="PersonelGirişAdı" Type="nvarchar" MaxLength="50" />
+    <Property Name="PersonelGirişSoyadı" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tbl_Uye">
+    <Key>
+      <PropertyRef Name="UyeTC" />
+    </Key>
+    <Property Name="UyeTC" Type="bigint" Nullable="false" />
+    <Property Name="UyeAdı" Type="nvarchar" MaxLength="50" />
+    <Property Name="UyeSoyadı" Type="nvarchar" MaxLength="50" />
+    <Property Name="UyeTelefon" Type="bigint" />
+    <Property Name="UyeAçıkAdres" Type="nvarchar" MaxLength="50" />
+    <Property Name="UyeMail" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK_tbl_Emanet_tbl_Kitap">
+    <End Role="tbl_Kitap" Type="Self.tbl_Kitap" Multiplicity="1" />
+    <End Role="tbl_Emanet" Type="Self.tbl_Emanet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Kitap">
+        <PropertyRef Name="KitapID" />
+      </Principal>
+      <Dependent Role="tbl_Emanet">
+        <PropertyRef Name="EmanetKitapID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_Emanet_tbl_Personel">
+    <End Role="tbl_Personel" Type="Self.tbl_Personel" Multiplicity="1" />
+    <End Role="tbl_Emanet" Type="Self.tbl_Emanet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Personel">
+        <PropertyRef Name="PersonelID" />
+      </Principal>
+      <Dependent Role="tbl_Emanet">
+        <PropertyRef Name="EmanetPersonelID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_Emanet_tbl_Uye">
+    <End Role="tbl_Uye" Type="Self.tbl_Uye" Multiplicity="1" />
+    <End Role="tbl_Emanet" Type="Self.tbl_Emanet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Uye">
+        <PropertyRef Name="UyeTC" />
+      </Principal>
+      <Dependent Role="tbl_Emanet">
+        <PropertyRef Name="EmanetUyeTC" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_PersonelGiriş_tbl_Personel">
+    <End Role="tbl_Personel" Type="Self.tbl_Personel" Multiplicity="1" />
+    <End Role="tbl_PersonelGiriş" Type="Self.tbl_PersonelGiriş" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Personel">
+        <PropertyRef Name="PersonelID" />
+      </Principal>
+      <Dependent Role="tbl_PersonelGiriş">
+        <PropertyRef Name="PersonelGirişID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="ToplamEmanetTablosu" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <EntityContainer Name="ProjeModelStoreContainer">
+    <EntitySet Name="tbl_Emanet" EntityType="Self.tbl_Emanet" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Kitap" EntityType="Self.tbl_Kitap" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Personel" EntityType="Self.tbl_Personel" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_PersonelGiriş" EntityType="Self.tbl_PersonelGiriş" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Uye" EntityType="Self.tbl_Uye" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_tbl_Emanet_tbl_Kitap" Association="Self.FK_tbl_Emanet_tbl_Kitap">
+      <End Role="tbl_Kitap" EntitySet="tbl_Kitap" />
+      <End Role="tbl_Emanet" EntitySet="tbl_Emanet" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_Emanet_tbl_Personel" Association="Self.FK_tbl_Emanet_tbl_Personel">
+      <End Role="tbl_Personel" EntitySet="tbl_Personel" />
+      <End Role="tbl_Emanet" EntitySet="tbl_Emanet" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_Emanet_tbl_Uye" Association="Self.FK_tbl_Emanet_tbl_Uye">
+      <End Role="tbl_Uye" EntitySet="tbl_Uye" />
+      <End Role="tbl_Emanet" EntitySet="tbl_Emanet" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_PersonelGiriş_tbl_Personel" Association="Self.FK_tbl_PersonelGiriş_tbl_Personel">
+      <End Role="tbl_Personel" EntitySet="tbl_Personel" />
+      <End Role="tbl_PersonelGiriş" EntitySet="tbl_PersonelGiriş" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

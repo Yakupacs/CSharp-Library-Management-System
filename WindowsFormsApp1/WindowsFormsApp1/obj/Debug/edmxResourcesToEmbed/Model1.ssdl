@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Gorsel_ProgramlamaModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Gorsel_Programlama.dbo.tbl_İngilizce' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tbl_İngilizce">
+    <Key>
+      <PropertyRef Name="İngilizce" />
+      <PropertyRef Name="Türkçe" />
+    </Key>
+    <Property Name="İngilizce" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Türkçe" Type="nvarchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_Kitaplar">
+    <Key>
+      <PropertyRef Name="KitapID" />
+    </Key>
+    <Property Name="KitapID" Type="smallint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="KitapAdi" Type="nvarchar" MaxLength="50" />
+    <Property Name="KitapYazari" Type="nvarchar" MaxLength="50" />
+    <Property Name="KitapYayinEvi" Type="nvarchar" MaxLength="50" />
+    <Property Name="KitapBasimYili" Type="nvarchar" MaxLength="50" />
+    <Property Name="KitapSayfaSayisi" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Gorsel_Programlama.dbo.tbl_login' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tbl_login">
+    <Key>
+      <PropertyRef Name="username" />
+      <PropertyRef Name="password" />
+    </Key>
+    <Property Name="username" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="password" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="Gorsel_ProgramlamaModelStoreContainer">
+    <EntitySet Name="tbl_Kitaplar" EntityType="Self.tbl_Kitaplar" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_İngilizce" EntityType="Self.tbl_İngilizce" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tbl_İngilizce].[İngilizce] AS [İngilizce], 
+    [tbl_İngilizce].[Türkçe] AS [Türkçe]
+    FROM [dbo].[tbl_İngilizce] AS [tbl_İngilizce]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tbl_login" EntityType="Self.tbl_login" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tbl_login].[username] AS [username], 
+    [tbl_login].[password] AS [password]
+    FROM [dbo].[tbl_login] AS [tbl_login]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

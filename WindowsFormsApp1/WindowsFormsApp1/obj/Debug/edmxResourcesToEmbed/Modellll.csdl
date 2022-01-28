@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ProjeModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="tbl_Kitap">
+    <Key>
+      <PropertyRef Name="KitapID" />
+    </Key>
+    <Property Name="KitapID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="KitapAdı" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="KitapYazarı" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="KitapYayınevi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="KitapSayfaSayısı" Type="Int32" />
+    <Property Name="KitapKategori" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="KitapEmanetMi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="tbl_Personel">
+    <Key>
+      <PropertyRef Name="PersonelID" />
+    </Key>
+    <Property Name="PersonelID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PersonelAdı" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PersonelSoyadı" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PersonelTC" Type="Int64" Nullable="false" />
+    <Property Name="PersonelTelefon" Type="Int64" Nullable="false" />
+    <Property Name="PersonelAçıkAdres" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PersonelMail" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PersonelKullanıcıAdı" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PersonelŞifre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="tbl_Uye">
+    <Key>
+      <PropertyRef Name="UyeTC" />
+    </Key>
+    <Property Name="UyeTC" Type="Int64" Nullable="false" />
+    <Property Name="UyeAdı" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UyeSoyadı" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UyeTelefon" Type="Int64" />
+    <Property Name="UyeAçıkAdres" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UyeMail" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="ProjeEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tbl_Kitap" EntityType="Self.tbl_Kitap" />
+    <EntitySet Name="tbl_Personel" EntityType="Self.tbl_Personel" />
+    <EntitySet Name="tbl_Uye" EntityType="Self.tbl_Uye" />
+  </EntityContainer>
+</Schema>

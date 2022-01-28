@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="ProjeModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="tbl_Emanetlerrr">
+          <Key>
+            <PropertyRef Name="EmanetID" />
+          </Key>
+          <Property Name="EmanetID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="EmanetKitapID" Type="int" />
+          <Property Name="EmanetÜyeTC" Type="nvarchar" MaxLength="11" />
+          <Property Name="EmanetVerilenTarih" Type="datetime" />
+          <Property Name="EmanetAlınacakTarih" Type="datetime" />
+          <Property Name="EmanetDurum" Type="bit" />
+        </EntityType>
+        <EntityType Name="tbl_Kitap">
+          <Key>
+            <PropertyRef Name="KitapID" />
+          </Key>
+          <Property Name="KitapID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="KitapAdı" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="KitapYazarı" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="KitapYayınevi" Type="nvarchar" MaxLength="50" />
+          <Property Name="KitapSayfaSayısı" Type="int" />
+          <Property Name="KitapKategori" Type="nvarchar" MaxLength="50" />
+          <Property Name="KitapEmanetMi" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="tbl_Personel">
+          <Key>
+            <PropertyRef Name="PersonelID" />
+          </Key>
+          <Property Name="PersonelID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PersonelAdı" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="PersonelSoyadı" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="PersonelTC" Type="bigint" Nullable="false" />
+          <Property Name="PersonelTelefon" Type="bigint" Nullable="false" />
+          <Property Name="PersonelAçıkAdres" Type="nvarchar" MaxLength="50" />
+          <Property Name="PersonelMail" Type="nvarchar" MaxLength="50" />
+          <Property Name="PersonelKullanıcıAdı" Type="nvarchar" MaxLength="50" />
+          <Property Name="PersonelŞifre" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="tbl_Uyee">
+          <Key>
+            <PropertyRef Name="UyeTC" />
+          </Key>
+          <Property Name="UyeTC" Type="nvarchar" MaxLength="11" Nullable="false" />
+          <Property Name="UyeAdı" Type="nvarchar" MaxLength="50" />
+          <Property Name="UyeSoyadı" Type="nvarchar" MaxLength="50" />
+          <Property Name="UyeTelefon" Type="bigint" />
+          <Property Name="UyeAçıkAdres" Type="nvarchar" MaxLength="50" />
+          <Property Name="UyeMail" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <Association Name="FK_tbl_Emanetlerrr_tbl_Kitap">
+          <End Role="tbl_Kitap" Type="Self.tbl_Kitap" Multiplicity="0..1" />
+          <End Role="tbl_Emanetlerrr" Type="Self.tbl_Emanetlerrr" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_Kitap">
+              <PropertyRef Name="KitapID" />
+            </Principal>
+            <Dependent Role="tbl_Emanetlerrr">
+              <PropertyRef Name="EmanetKitapID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tbl_Emanetlerrr_tbl_Uyee">
+          <End Role="tbl_Uyee" Type="Self.tbl_Uyee" Multiplicity="0..1" />
+          <End Role="tbl_Emanetlerrr" Type="Self.tbl_Emanetlerrr" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_Uyee">
+              <PropertyRef Name="UyeTC" />
+            </Principal>
+            <Dependent Role="tbl_Emanetlerrr">
+              <PropertyRef Name="EmanetÜyeTC" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="ProjeModelStoreContainer">
+          <EntitySet Name="tbl_Emanetlerrr" EntityType="Self.tbl_Emanetlerrr" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tbl_Kitap" EntityType="Self.tbl_Kitap" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tbl_Personel" EntityType="Self.tbl_Personel" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tbl_Uyee" EntityType="Self.tbl_Uyee" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_tbl_Emanetlerrr_tbl_Kitap" Association="Self.FK_tbl_Emanetlerrr_tbl_Kitap">
+            <End Role="tbl_Kitap" EntitySet="tbl_Kitap" />
+            <End Role="tbl_Emanetlerrr" EntitySet="tbl_Emanetlerrr" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tbl_Emanetlerrr_tbl_Uyee" Association="Self.FK_tbl_Emanetlerrr_tbl_Uyee">
+            <End Role="tbl_Uyee" EntitySet="tbl_Uyee" />
+            <End Role="tbl_Emanetlerrr" EntitySet="tbl_Emanetlerrr" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ProjeModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="tbl_Kitap">
+          <Key>
+            <PropertyRef Name="KitapID" />
+          </Key>
+          <Property Name="KitapID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="KitapAdı" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="KitapYazarı" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="KitapYayınevi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="KitapSayfaSayısı" Type="Int32" />
+          <Property Name="KitapKategori" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="KitapEmanetMi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="tbl_Emanetlerrr" Relationship="ProjeModel.FK_tbl_Emanetlerrr_tbl_Kitap" FromRole="tbl_Kitap" ToRole="tbl_Emanetlerrr" />
+        </EntityType>
+        <EntityType Name="tbl_Personel">
+          <Key>
+            <PropertyRef Name="PersonelID" />
+          </Key>
+          <Property Name="PersonelID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PersonelAdı" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="PersonelSoyadı" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="PersonelTC" Type="Int64" Nullable="false" />
+          <Property Name="PersonelTelefon" Type="Int64" Nullable="false" />
+          <Property Name="PersonelAçıkAdres" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="PersonelMail" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="PersonelKullanıcıAdı" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="PersonelŞifre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityContainer Name="ProjeEntities2" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="tbl_Kitap" EntityType="Self.tbl_Kitap" />
+          <EntitySet Name="tbl_Personel" EntityType="Self.tbl_Personel" />
+          <EntitySet Name="tbl_Emanetlerrr" EntityType="ProjeModel.tbl_Emanetlerrr" />
+          <AssociationSet Name="FK_tbl_Emanetlerrr_tbl_Kitap" Association="ProjeModel.FK_tbl_Emanetlerrr_tbl_Kitap">
+            <End Role="tbl_Kitap" EntitySet="tbl_Kitap" />
+            <End Role="tbl_Emanetlerrr" EntitySet="tbl_Emanetlerrr" />
+          </AssociationSet>
+          <EntitySet Name="tbl_Uyee" EntityType="ProjeModel.tbl_Uyee" />
+          <AssociationSet Name="FK_tbl_Emanetlerrr_tbl_Uyee" Association="ProjeModel.FK_tbl_Emanetlerrr_tbl_Uyee">
+            <End Role="tbl_Uyee" EntitySet="tbl_Uyee" />
+            <End Role="tbl_Emanetlerrr" EntitySet="tbl_Emanetlerrr" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="tbl_Emanetlerrr">
+          <Key>
+            <PropertyRef Name="EmanetID" />
+          </Key>
+          <Property Name="EmanetID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EmanetKitapID" Type="Int32" />
+          <Property Name="EmanetÜyeTC" Type="String" MaxLength="11" FixedLength="false" Unicode="true" />
+          <Property Name="EmanetVerilenTarih" Type="DateTime" Precision="3" />
+          <Property Name="EmanetAlınacakTarih" Type="DateTime" Precision="3" />
+          <Property Name="EmanetDurum" Type="Boolean" />
+          <NavigationProperty Name="tbl_Kitap" Relationship="ProjeModel.FK_tbl_Emanetlerrr_tbl_Kitap" FromRole="tbl_Emanetlerrr" ToRole="tbl_Kitap" />
+          <NavigationProperty Name="tbl_Uyee" Relationship="ProjeModel.FK_tbl_Emanetlerrr_tbl_Uyee" FromRole="tbl_Emanetlerrr" ToRole="tbl_Uyee" />
+        </EntityType>
+        <Association Name="FK_tbl_Emanetlerrr_tbl_Kitap">
+          <End Type="ProjeModel.tbl_Kitap" Role="tbl_Kitap" Multiplicity="0..1" />
+          <End Type="ProjeModel.tbl_Emanetlerrr" Role="tbl_Emanetlerrr" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_Kitap">
+              <PropertyRef Name="KitapID" />
+            </Principal>
+            <Dependent Role="tbl_Emanetlerrr">
+              <PropertyRef Name="EmanetKitapID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="tbl_Uyee">
+          <Key>
+            <PropertyRef Name="UyeTC" />
+          </Key>
+          <Property Name="UyeTC" Type="String" Nullable="false" MaxLength="11" FixedLength="false" Unicode="true" />
+          <Property Name="UyeAdı" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="UyeSoyadı" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="UyeTelefon" Type="Int64" />
+          <Property Name="UyeAçıkAdres" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="UyeMail" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="tbl_Emanetlerrr" Relationship="ProjeModel.FK_tbl_Emanetlerrr_tbl_Uyee" FromRole="tbl_Uyee" ToRole="tbl_Emanetlerrr" />
+        </EntityType>
+        <Association Name="FK_tbl_Emanetlerrr_tbl_Uyee">
+          <End Type="ProjeModel.tbl_Uyee" Role="tbl_Uyee" Multiplicity="0..1" />
+          <End Type="ProjeModel.tbl_Emanetlerrr" Role="tbl_Emanetlerrr" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_Uyee">
+              <PropertyRef Name="UyeTC" />
+            </Principal>
+            <Dependent Role="tbl_Emanetlerrr">
+              <PropertyRef Name="EmanetÜyeTC" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ProjeModelStoreContainer" CdmEntityContainer="ProjeEntities2">
+          <EntitySetMapping Name="tbl_Kitap">
+            <EntityTypeMapping TypeName="ProjeModel.tbl_Kitap">
+              <MappingFragment StoreEntitySet="tbl_Kitap">
+                <ScalarProperty Name="KitapID" ColumnName="KitapID" />
+                <ScalarProperty Name="KitapAdı" ColumnName="KitapAdı" />
+                <ScalarProperty Name="KitapYazarı" ColumnName="KitapYazarı" />
+                <ScalarProperty Name="KitapYayınevi" ColumnName="KitapYayınevi" />
+                <ScalarProperty Name="KitapSayfaSayısı" ColumnName="KitapSayfaSayısı" />
+                <ScalarProperty Name="KitapKategori" ColumnName="KitapKategori" />
+                <ScalarProperty Name="KitapEmanetMi" ColumnName="KitapEmanetMi" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_Personel">
+            <EntityTypeMapping TypeName="ProjeModel.tbl_Personel">
+              <MappingFragment StoreEntitySet="tbl_Personel">
+                <ScalarProperty Name="PersonelID" ColumnName="PersonelID" />
+                <ScalarProperty Name="PersonelAdı" ColumnName="PersonelAdı" />
+                <ScalarProperty Name="PersonelSoyadı" ColumnName="PersonelSoyadı" />
+                <ScalarProperty Name="PersonelTC" ColumnName="PersonelTC" />
+                <ScalarProperty Name="PersonelTelefon" ColumnName="PersonelTelefon" />
+                <ScalarProperty Name="PersonelAçıkAdres" ColumnName="PersonelAçıkAdres" />
+                <ScalarProperty Name="PersonelMail" ColumnName="PersonelMail" />
+                <ScalarProperty Name="PersonelKullanıcıAdı" ColumnName="PersonelKullanıcıAdı" />
+                <ScalarProperty Name="PersonelŞifre" ColumnName="PersonelŞifre" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_Emanetlerrr">
+            <EntityTypeMapping TypeName="ProjeModel.tbl_Emanetlerrr">
+              <MappingFragment StoreEntitySet="tbl_Emanetlerrr">
+                <ScalarProperty Name="EmanetDurum" ColumnName="EmanetDurum" />
+                <ScalarProperty Name="EmanetAlınacakTarih" ColumnName="EmanetAlınacakTarih" />
+                <ScalarProperty Name="EmanetVerilenTarih" ColumnName="EmanetVerilenTarih" />
+                <ScalarProperty Name="EmanetÜyeTC" ColumnName="EmanetÜyeTC" />
+                <ScalarProperty Name="EmanetKitapID" ColumnName="EmanetKitapID" />
+                <ScalarProperty Name="EmanetID" ColumnName="EmanetID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_Uyee">
+            <EntityTypeMapping TypeName="ProjeModel.tbl_Uyee">
+              <MappingFragment StoreEntitySet="tbl_Uyee">
+                <ScalarProperty Name="UyeMail" ColumnName="UyeMail" />
+                <ScalarProperty Name="UyeAçıkAdres" ColumnName="UyeAçıkAdres" />
+                <ScalarProperty Name="UyeTelefon" ColumnName="UyeTelefon" />
+                <ScalarProperty Name="UyeSoyadı" ColumnName="UyeSoyadı" />
+                <ScalarProperty Name="UyeAdı" ColumnName="UyeAdı" />
+                <ScalarProperty Name="UyeTC" ColumnName="UyeTC" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

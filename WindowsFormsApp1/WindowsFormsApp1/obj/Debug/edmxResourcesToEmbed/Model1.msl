@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Gorsel_ProgramlamaModelStoreContainer" CdmEntityContainer="Gorsel_ProgramlamaEntities">
+    <EntitySetMapping Name="tbl_Kitaplar">
+      <EntityTypeMapping TypeName="Gorsel_ProgramlamaModel.tbl_Kitaplar">
+        <MappingFragment StoreEntitySet="tbl_Kitaplar">
+          <ScalarProperty Name="KitapID" ColumnName="KitapID" />
+          <ScalarProperty Name="KitapAdi" ColumnName="KitapAdi" />
+          <ScalarProperty Name="KitapYazari" ColumnName="KitapYazari" />
+          <ScalarProperty Name="KitapYayinEvi" ColumnName="KitapYayinEvi" />
+          <ScalarProperty Name="KitapBasimYili" ColumnName="KitapBasimYili" />
+          <ScalarProperty Name="KitapSayfaSayisi" ColumnName="KitapSayfaSayisi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_İngilizce">
+      <EntityTypeMapping TypeName="Gorsel_ProgramlamaModel.tbl_İngilizce">
+        <MappingFragment StoreEntitySet="tbl_İngilizce">
+          <ScalarProperty Name="İngilizce" ColumnName="İngilizce" />
+          <ScalarProperty Name="Türkçe" ColumnName="Türkçe" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_login">
+      <EntityTypeMapping TypeName="Gorsel_ProgramlamaModel.tbl_login">
+        <MappingFragment StoreEntitySet="tbl_login">
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="password" ColumnName="password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

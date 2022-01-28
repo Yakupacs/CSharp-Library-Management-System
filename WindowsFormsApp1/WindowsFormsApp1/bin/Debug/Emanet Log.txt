@@ -1,0 +1,56 @@
+
+(EMANET VERİLDİ) 
+Seçilen Kitap: İktidar (Güç Sahibi Olmanın 48 Yasası)
+Emanet Verilen Üye: Pelin Tok
+Tarih: 23.01.2022 02:21:34
+Emanet Verildi.
+
+(EMANET VERİLDİ) 
+Seçilen Kitap: Fareler ve İnsanlar
+Emanet Verilen Üye: Selin Eralp
+Tarih: 25.01.2022 03:52:21
+Emanet Verildi.
+
+(EMANET BİLGİSİ SİLİNDİ) 
+Silinen Emanet ID: 32
+Tarih: 26.01.2022 17:59:33
+Emanet Silindi.
+
+(EMANET BİLGİSİ SİLİNDİ) 
+Silinen Emanet ID: 31
+Tarih: 26.01.2022 17:59:37
+Emanet Silindi.
+
+(EMANET BİLGİSİ SİLİNDİ) 
+Silinen Emanet ID: 30
+Tarih: 26.01.2022 18:22:14
+Emanet Silindi.
+
+(EMANET VERİLDİ) 
+Seçilen Kitap: Tarihsel Süreç İçinde Dünya Ekonomisi
+Emanet Verilen Üye: Ahmet Uyanık
+Tarih: 26.01.2022 18:22:23
+Emanet Verildi.
+
+(EMANET VERİLDİ) 
+Seçilen Kitap: Şeker Portakalı
+Emanet Verilen Üye: Ahmet Demir
+Tarih: 27.01.2022 01:10:07
+Emanet Verildi.
+
+(EMANET VERİLDİ) 
+Seçilen Kitap: Kürk Mantolu Madonna
+Emanet Verilen Üye: Yakup Açış
+Tarih: 27.01.2022 05:40:09
+Emanet Verildi.
+
+(EMANET BİLGİSİ SİLİNDİ) 
+Silinen Emanet ID: 34
+Tarih: 27.01.2022 05:41:25
+Emanet Silindi.
+
+(EMANET VERİLDİ) 
+Seçilen Kitap: Hızlı ve Yavaş Düşünme
+Emanet Verilen Üye: Ali Kahraman
+Tarih: 28.01.2022 19:24:27
+Emanet Verildi.

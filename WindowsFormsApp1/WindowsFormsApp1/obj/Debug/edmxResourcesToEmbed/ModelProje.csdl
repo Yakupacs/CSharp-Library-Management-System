@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="GorselProgramlamaModel1" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="tbl_Emanet">
+    <Key>
+      <PropertyRef Name="emanetVerilme" />
+    </Key>
+    <Property Name="emanetVerilme" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="emanetAlinma" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="tbl_Kitaplar">
+    <Key>
+      <PropertyRef Name="kitapId" />
+    </Key>
+    <Property Name="kitapId" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="kitapAdi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="kitapYazari" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="kitapYayinevi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="kitapSayfaSayisi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="kitapKategori" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_Musteri">
+    <Key>
+      <PropertyRef Name="musteriTc" />
+    </Key>
+    <Property Name="musteriTc" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="musteriAd" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="musteriSoyad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="musteriCinsiyet" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="musteriYas" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="musteriTelefon" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="musteriEposta" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="musteriAdres" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="tbl_Personel">
+    <Key>
+      <PropertyRef Name="personelId" />
+    </Key>
+    <Property Name="personelId" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="personelAd" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="personelSoyad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="personelCinsiyet" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="personelYas" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="personelTelefon" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="personelEposta" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="personelAdres" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="personelGorev" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="GorselProgramlamaEntities2f" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tbl_Emanet" EntityType="Self.tbl_Emanet" />
+    <EntitySet Name="tbl_Kitaplar" EntityType="Self.tbl_Kitaplar" />
+    <EntitySet Name="tbl_Musteri" EntityType="Self.tbl_Musteri" />
+    <EntitySet Name="tbl_Personel" EntityType="Self.tbl_Personel" />
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ProjeModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tbl_Kitap">
+    <Key>
+      <PropertyRef Name="KitapID" />
+    </Key>
+    <Property Name="KitapID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="KitapAdı" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="KitapYazarı" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="KitapYayınevi" Type="nvarchar" MaxLength="50" />
+    <Property Name="KitapSayfaSayısı" Type="int" />
+    <Property Name="KitapKategori" Type="nvarchar" MaxLength="50" />
+    <Property Name="KitapEmanetMi" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tbl_Personel">
+    <Key>
+      <PropertyRef Name="PersonelID" />
+    </Key>
+    <Property Name="PersonelID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PersonelAdı" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="PersonelSoyadı" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="PersonelTC" Type="bigint" Nullable="false" />
+    <Property Name="PersonelTelefon" Type="bigint" Nullable="false" />
+    <Property Name="PersonelAçıkAdres" Type="nvarchar" MaxLength="50" />
+    <Property Name="PersonelMail" Type="nvarchar" MaxLength="50" />
+    <Property Name="PersonelKullanıcıAdı" Type="nvarchar" MaxLength="50" />
+    <Property Name="PersonelŞifre" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tbl_Uye">
+    <Key>
+      <PropertyRef Name="UyeTC" />
+    </Key>
+    <Property Name="UyeTC" Type="bigint" Nullable="false" />
+    <Property Name="UyeAdı" Type="nvarchar" MaxLength="50" />
+    <Property Name="UyeSoyadı" Type="nvarchar" MaxLength="50" />
+    <Property Name="UyeTelefon" Type="bigint" />
+    <Property Name="UyeAçıkAdres" Type="nvarchar" MaxLength="50" />
+    <Property Name="UyeMail" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityContainer Name="ProjeModelStoreContainer">
+    <EntitySet Name="tbl_Kitap" EntityType="Self.tbl_Kitap" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Personel" EntityType="Self.tbl_Personel" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Uye" EntityType="Self.tbl_Uye" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

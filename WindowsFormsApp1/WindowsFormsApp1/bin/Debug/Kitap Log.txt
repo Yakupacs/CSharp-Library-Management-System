@@ -1,0 +1,200 @@
+
+(KİTAP GÜNCELLENDİ) 
+Güncellenen Kitap: Şeker Portakalı
+Kitap Yazarı: Jose Mauro De Vasconcelos
+Kitap Yayınevi: Can Yayınları
+Kitap Sayfa Sayısı: 202
+Kitap Kategori: Roman
+Tarih:23.01.2022 02:21:26
+Kitap Güncellendi.
+
+(KİTAP EKLENDİ) 
+Eklenen Kitap: a
+Tarih: 26.01.2022 18:46:11
+Kitap Eklendi.
+
+(KİTAP SİLİNDİ) 
+Silinen Kitap ID: 25
+Tarih: 26.01.2022 18:46:14
+Kitap Silindi.
+
+(KİTAP EKLENDİ) 
+Eklenen Kitap: a
+Tarih: 26.01.2022 18:47:00
+Kitap Eklendi.
+
+(KİTAP SİLİNDİ) 
+Silinen Kitap ID: 26
+Tarih: 26.01.2022 18:47:04
+Kitap Silindi.
+
+(KİTAP GÜNCELLENDİ) 
+Güncellenen Kitap: Fareler ve İnsanlar
+Kitap Yazarı: John Steinbeck
+Kitap Yayınevi: Sel Yayınları
+Kitap Sayfa Sayısı: 136
+Kitap Kategori: Roman
+Tarih:26.01.2022 18:55:25
+Kitap Güncellendi.
+
+(KİTAP GÜNCELLENDİ) 
+Güncellenen Kitap: İçimizdeki Şeytan
+Kitap Yazarı: Sabahattin Ali
+Kitap Yayınevi: Yapı Kredi Yayınları
+Kitap Sayfa Sayısı: 220
+Kitap Kategori: Roman
+Tarih:26.01.2022 19:01:13
+Kitap Güncellendi.
+
+(KİTAP GÜNCELLENDİ) 
+Güncellenen Kitap: Kuyucaklı Yusuf
+Kitap Yazarı: Sabahattin Ali
+Kitap Yayınevi: Yapı Kredi Yayınları
+Kitap Sayfa Sayısı: 160
+Kitap Kategori: Roman
+Tarih:26.01.2022 19:01:16
+Kitap Güncellendi.
+
+(KİTAP GÜNCELLENDİ) 
+Güncellenen Kitap: Bilgisayar Ağları ve İnternet
+Kitap Yazarı: Douglas E. Comer
+Kitap Yayınevi: Nobel Akademik Yayıncılık
+Kitap Sayfa Sayısı: 662
+Kitap Kategori: Bilgisayar
+Tarih:26.01.2022 19:01:28
+Kitap Güncellendi.
+
+(KİTAP GÜNCELLENDİ) 
+Güncellenen Kitap: Fareler ve İnsanlar
+Kitap Yazarı: John Steinbeck
+Kitap Yayınevi: Sel Yayınları
+Kitap Sayfa Sayısı: 136
+Kitap Kategori: Roman
+Tarih:26.01.2022 19:03:54
+Kitap Güncellendi.
+
+(KİTAP EKLENDİ) 
+Eklenen Kitap: Bilinmeyen Bir Kadının Mektubu
+Tarih: 26.01.2022 19:39:32
+Kitap Eklendi.
+
+(KİTAP SİLİNDİ) 
+Silinen Kitap ID: 27
+Tarih: 26.01.2022 19:39:36
+Kitap Silindi.
+
+(KİTAP GÜNCELLENDİ) 
+Güncellenen Kitap: Fareler ve İnsanlar
+Kitap Yazarı: John Steinbeck
+Kitap Yayınevi: Sel Yayınları
+Kitap Sayfa Sayısı: 136
+Kitap Kategori: Roman
+Tarih:26.01.2022 19:43:59
+Kitap Güncellendi.
+
+(KİTAP GÜNCELLENDİ) 
+Güncellenen Kitap: Kuyucaklı Yusuf
+Kitap Yazarı: Sabahattin Ali
+Kitap Yayınevi: Yapı Kredi Yayınları
+Kitap Sayfa Sayısı: 160
+Kitap Kategori: Roman
+Tarih:26.01.2022 19:44:23
+Kitap Güncellendi.
+
+(KİTAP GÜNCELLENDİ) 
+Güncellenen Kitap: Raspberry Pi ile Linux Ve Elektronik Uygulamaları
+Kitap Yazarı: Özgür Koca
+Kitap Yayınevi: KitapYurdu Doğrudan Yayıncılık
+Kitap Sayfa Sayısı: 858
+Kitap Kategori: Bilgisayar
+Tarih:26.01.2022 19:44:28
+Kitap Güncellendi.
+
+(KİTAP GÜNCELLENDİ) 
+Güncellenen Kitap: Ethical Hacking Offensive ve Defensive
+Kitap Yazarı: Ömer Çıtak
+Kitap Yayınevi: Abaküs Kitap
+Kitap Sayfa Sayısı: 304
+Kitap Kategori: Bilgisayar
+Tarih:26.01.2022 19:44:30
+Kitap Güncellendi.
+
+(KİTAP GÜNCELLENDİ) 
+Güncellenen Kitap: Sırça Köşk
+Kitap Yazarı: Sabahattin Ali
+Kitap Yayınevi: Yapı Kredi Yayınları
+Kitap Sayfa Sayısı: 150
+Kitap Kategori: Roman
+Tarih:26.01.2022 19:44:32
+Kitap Güncellendi.
+
+(KİTAP EKLENDİ) 
+Eklenen Kitap: Sırça Köşk
+Tarih: 26.01.2022 19:44:34
+Kitap Eklendi.
+
+(KİTAP SİLİNDİ) 
+Silinen Kitap ID: 28
+Tarih: 26.01.2022 19:44:37
+Kitap Silindi.
+
+(KİTAP SİLİNDİ) 
+Silinen Kitap ID: 17
+Tarih: 26.01.2022 19:45:59
+Kitap Silindi.
+
+(KİTAP EKLENDİ) 
+Eklenen Kitap: a
+Tarih: 26.01.2022 23:08:26
+Kitap Eklendi.
+
+(KİTAP SİLİNDİ) 
+Silinen Kitap ID: 29
+Tarih: 26.01.2022 23:08:36
+Kitap Silindi.
+
+(KİTAP GÜNCELLENDİ) 
+Güncellenen Kitap: Kuyucaklı Yusuf
+Kitap Yazarı: Sabahattin Ali
+Kitap Yayınevi: Yapı Kredi Yayınları
+Kitap Sayfa Sayısı: 160
+Kitap Kategori: Roman
+Tarih:26.01.2022 23:30:30
+Kitap Güncellendi.
+
+(KİTAP GÜNCELLENDİ) 
+Güncellenen Kitap: Kuyucaklı Yusuf
+Kitap Yazarı: Sabahattin Ali
+Kitap Yayınevi: Yapı Kredi Yayınları
+Kitap Sayfa Sayısı: 160
+Kitap Kategori: Roman
+Tarih:27.01.2022 15:30:00
+Kitap Güncellendi.
+
+(KİTAP GÜNCELLENDİ) 
+Güncellenen Kitap: HTML ve CSS Web Siteleri Tasarlamak ve Oluşturmak
+Kitap Yazarı: Jon Duckett 
+Kitap Yayınevi: Nobel Yaşam
+Kitap Sayfa Sayısı: 508
+Kitap Kategori: Bilgisayar
+Tarih:27.01.2022 15:30:45
+Kitap Güncellendi.
+
+(KİTAP GÜNCELLENDİ) 
+Güncellenen Kitap: Sırça Köşk
+Kitap Yazarı: Sabahattin Ali
+Kitap Yayınevi: Yapı Kredi Yayınları
+Kitap Sayfa Sayısı: 151
+Kitap Kategori: Roman
+Tarih:28.01.2022 19:20:50
+Kitap Güncellendi.
+
+(KİTAP EKLENDİ) 
+Eklenen Kitap: Tarihsel Süreç sssİçinde Dünya Ekonomisi
+Tarih: 28.01.2022 19:21:13
+Kitap Eklendi.
+
+(KİTAP SİLİNDİ) 
+Silinen Kitap ID: 30
+Tarih: 28.01.2022 19:21:20
+Kitap Silindi.

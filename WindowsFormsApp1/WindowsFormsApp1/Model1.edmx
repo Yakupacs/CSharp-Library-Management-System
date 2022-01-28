@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Gorsel_ProgramlamaModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'Gorsel_Programlama.dbo.tbl_İngilizce' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="tbl_İngilizce">
+          <Key>
+            <PropertyRef Name="İngilizce" />
+            <PropertyRef Name="Türkçe" />
+          </Key>
+          <Property Name="İngilizce" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Türkçe" Type="nvarchar" MaxLength="100" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tbl_Kitaplar">
+          <Key>
+            <PropertyRef Name="KitapID" />
+          </Key>
+          <Property Name="KitapID" Type="smallint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="KitapAdi" Type="nvarchar" MaxLength="50" />
+          <Property Name="KitapYazari" Type="nvarchar" MaxLength="50" />
+          <Property Name="KitapYayinEvi" Type="nvarchar" MaxLength="50" />
+          <Property Name="KitapBasimYili" Type="nvarchar" MaxLength="50" />
+          <Property Name="KitapSayfaSayisi" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'Gorsel_Programlama.dbo.tbl_login' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="tbl_login">
+          <Key>
+            <PropertyRef Name="username" />
+            <PropertyRef Name="password" />
+          </Key>
+          <Property Name="username" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="password" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="Gorsel_ProgramlamaModelStoreContainer">
+          <EntitySet Name="tbl_Kitaplar" EntityType="Self.tbl_Kitaplar" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tbl_İngilizce" EntityType="Self.tbl_İngilizce" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [tbl_İngilizce].[İngilizce] AS [İngilizce], 
+    [tbl_İngilizce].[Türkçe] AS [Türkçe]
+    FROM [dbo].[tbl_İngilizce] AS [tbl_İngilizce]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="tbl_login" EntityType="Self.tbl_login" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [tbl_login].[username] AS [username], 
+    [tbl_login].[password] AS [password]
+    FROM [dbo].[tbl_login] AS [tbl_login]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Gorsel_ProgramlamaModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="tbl_Kitaplar">
+          <Key>
+            <PropertyRef Name="KitapID" />
+          </Key>
+          <Property Name="KitapID" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="KitapAdi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="KitapYazari" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="KitapYayinEvi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="KitapBasimYili" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="KitapSayfaSayisi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="tbl_İngilizce">
+          <Key>
+            <PropertyRef Name="İngilizce" />
+            <PropertyRef Name="Türkçe" />
+          </Key>
+          <Property Name="İngilizce" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Türkçe" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tbl_login">
+          <Key>
+            <PropertyRef Name="username" />
+            <PropertyRef Name="password" />
+          </Key>
+          <Property Name="username" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="Gorsel_ProgramlamaEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="tbl_Kitaplar" EntityType="Self.tbl_Kitaplar" />
+          <EntitySet Name="tbl_İngilizce" EntityType="Self.tbl_İngilizce" />
+          <EntitySet Name="tbl_login" EntityType="Self.tbl_login" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Gorsel_ProgramlamaModelStoreContainer" CdmEntityContainer="Gorsel_ProgramlamaEntities">
+          <EntitySetMapping Name="tbl_Kitaplar">
+            <EntityTypeMapping TypeName="Gorsel_ProgramlamaModel.tbl_Kitaplar">
+              <MappingFragment StoreEntitySet="tbl_Kitaplar">
+                <ScalarProperty Name="KitapID" ColumnName="KitapID" />
+                <ScalarProperty Name="KitapAdi" ColumnName="KitapAdi" />
+                <ScalarProperty Name="KitapYazari" ColumnName="KitapYazari" />
+                <ScalarProperty Name="KitapYayinEvi" ColumnName="KitapYayinEvi" />
+                <ScalarProperty Name="KitapBasimYili" ColumnName="KitapBasimYili" />
+                <ScalarProperty Name="KitapSayfaSayisi" ColumnName="KitapSayfaSayisi" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_İngilizce">
+            <EntityTypeMapping TypeName="Gorsel_ProgramlamaModel.tbl_İngilizce">
+              <MappingFragment StoreEntitySet="tbl_İngilizce">
+                <ScalarProperty Name="İngilizce" ColumnName="İngilizce" />
+                <ScalarProperty Name="Türkçe" ColumnName="Türkçe" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_login">
+            <EntityTypeMapping TypeName="Gorsel_ProgramlamaModel.tbl_login">
+              <MappingFragment StoreEntitySet="tbl_login">
+                <ScalarProperty Name="username" ColumnName="username" />
+                <ScalarProperty Name="password" ColumnName="password" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

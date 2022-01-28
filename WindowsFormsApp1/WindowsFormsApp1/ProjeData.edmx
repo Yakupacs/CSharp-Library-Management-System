@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="GorselProgramlamaModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <!--Errors Found During Generation:
+warning 6013: The table/view 'GorselProgramlama.dbo.tbl_Emanet' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="tbl_Emanet">
+          <Property Name="emanetVerilme" Type="datetime" />
+          <Property Name="emanetAlinma" Type="datetime" />
+        </EntityType>-->
+        <EntityType Name="tbl_Kitaplar">
+          <Key>
+            <PropertyRef Name="kitapId" />
+          </Key>
+          <Property Name="kitapId" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="kitapAdi" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="kitapYazari" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="kitapYayinevi" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="kitapSayfaSayisi" Type="nvarchar" MaxLength="50" />
+          <Property Name="kitapKategori" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tbl_Musteri">
+          <Key>
+            <PropertyRef Name="musteriTc" />
+          </Key>
+          <Property Name="musteriTc" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="musteriAd" Type="nvarchar" MaxLength="50" />
+          <Property Name="musteriSoyad" Type="nvarchar" MaxLength="50" />
+          <Property Name="musteriCinsiyet" Type="nvarchar" MaxLength="50" />
+          <Property Name="musteriYas" Type="nvarchar" MaxLength="50" />
+          <Property Name="musteriTelefon" Type="nvarchar" MaxLength="50" />
+          <Property Name="musteriEposta" Type="nvarchar" MaxLength="50" />
+          <Property Name="musteriAdres" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="tbl_Personel">
+          <Key>
+            <PropertyRef Name="personelId" />
+          </Key>
+          <Property Name="personelId" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="personelAd" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="personelSoyad" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="personelCinsiyet" Type="nvarchar" MaxLength="50" />
+          <Property Name="personelYas" Type="nvarchar" MaxLength="50" />
+          <Property Name="personelTelefon" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="personelEposta" Type="nvarchar" MaxLength="50" />
+          <Property Name="personelAdres" Type="nvarchar" MaxLength="50" />
+          <Property Name="personelGorev" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="GorselProgramlamaModelStoreContainer">
+          <EntitySet Name="tbl_Kitaplar" EntityType="Self.tbl_Kitaplar" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tbl_Musteri" EntityType="Self.tbl_Musteri" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tbl_Personel" EntityType="Self.tbl_Personel" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="GorselProgramlamaModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="tbl_Kitaplar">
+          <Key>
+            <PropertyRef Name="kitapId" />
+          </Key>
+          <Property Name="kitapId" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="kitapAdi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="kitapYazari" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="kitapYayinevi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="kitapSayfaSayisi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="kitapKategori" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tbl_Musteri">
+          <Key>
+            <PropertyRef Name="musteriTc" />
+          </Key>
+          <Property Name="musteriTc" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="musteriAd" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="musteriSoyad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="musteriCinsiyet" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="musteriYas" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="musteriTelefon" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="musteriEposta" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="musteriAdres" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="tbl_Personel">
+          <Key>
+            <PropertyRef Name="personelId" />
+          </Key>
+          <Property Name="personelId" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="personelAd" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="personelSoyad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="personelCinsiyet" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="personelYas" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="personelTelefon" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="personelEposta" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="personelAdres" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="personelGorev" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="GorselProgramlamaEntities1" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="tbl_Kitaplar" EntityType="Self.tbl_Kitaplar" />
+          <EntitySet Name="tbl_Musteri" EntityType="Self.tbl_Musteri" />
+          <EntitySet Name="tbl_Personel" EntityType="Self.tbl_Personel" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="GorselProgramlamaModelStoreContainer" CdmEntityContainer="GorselProgramlamaEntities1">
+          <EntitySetMapping Name="tbl_Kitaplar">
+            <EntityTypeMapping TypeName="GorselProgramlamaModel.tbl_Kitaplar">
+              <MappingFragment StoreEntitySet="tbl_Kitaplar">
+                <ScalarProperty Name="kitapId" ColumnName="kitapId" />
+                <ScalarProperty Name="kitapAdi" ColumnName="kitapAdi" />
+                <ScalarProperty Name="kitapYazari" ColumnName="kitapYazari" />
+                <ScalarProperty Name="kitapYayinevi" ColumnName="kitapYayinevi" />
+                <ScalarProperty Name="kitapSayfaSayisi" ColumnName="kitapSayfaSayisi" />
+                <ScalarProperty Name="kitapKategori" ColumnName="kitapKategori" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_Musteri">
+            <EntityTypeMapping TypeName="GorselProgramlamaModel.tbl_Musteri">
+              <MappingFragment StoreEntitySet="tbl_Musteri">
+                <ScalarProperty Name="musteriTc" ColumnName="musteriTc" />
+                <ScalarProperty Name="musteriAd" ColumnName="musteriAd" />
+                <ScalarProperty Name="musteriSoyad" ColumnName="musteriSoyad" />
+                <ScalarProperty Name="musteriCinsiyet" ColumnName="musteriCinsiyet" />
+                <ScalarProperty Name="musteriYas" ColumnName="musteriYas" />
+                <ScalarProperty Name="musteriTelefon" ColumnName="musteriTelefon" />
+                <ScalarProperty Name="musteriEposta" ColumnName="musteriEposta" />
+                <ScalarProperty Name="musteriAdres" ColumnName="musteriAdres" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_Personel">
+            <EntityTypeMapping TypeName="GorselProgramlamaModel.tbl_Personel">
+              <MappingFragment StoreEntitySet="tbl_Personel">
+                <ScalarProperty Name="personelId" ColumnName="personelId" />
+                <ScalarProperty Name="personelAd" ColumnName="personelAd" />
+                <ScalarProperty Name="personelSoyad" ColumnName="personelSoyad" />
+                <ScalarProperty Name="personelCinsiyet" ColumnName="personelCinsiyet" />
+                <ScalarProperty Name="personelYas" ColumnName="personelYas" />
+                <ScalarProperty Name="personelTelefon" ColumnName="personelTelefon" />
+                <ScalarProperty Name="personelEposta" ColumnName="personelEposta" />
+                <ScalarProperty Name="personelAdres" ColumnName="personelAdres" />
+                <ScalarProperty Name="personelGorev" ColumnName="personelGorev" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

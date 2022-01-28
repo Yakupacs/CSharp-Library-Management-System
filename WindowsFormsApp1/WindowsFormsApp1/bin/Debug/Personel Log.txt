@@ -1,0 +1,18 @@
+
+(PERSONEL GÜNCELLENDİ) 
+Personel Adı Soyadı: Ayşe Sancak
+Personel Telefon NO: 5351004080
+Personel Adres: Kütahya
+Personel Mail: aysesancaktar@gmail.com
+Personel Kullanıcı Adı: aysesancaktar
+Tarih:23.01.2022 02:22:19
+Personel Güncellendi.
+
+(PERSONEL GÜNCELLENDİ) 
+Personel Adı Soyadı: Ensar Makas
+Personel Telefon NO: 5351002030
+Personel Adres: Ankara
+Personel Mail: ensarmakas
+Personel Kullanıcı Adı: ensarmakas
+Tarih:28.01.2022 19:21:52
+Personel Güncellendi.

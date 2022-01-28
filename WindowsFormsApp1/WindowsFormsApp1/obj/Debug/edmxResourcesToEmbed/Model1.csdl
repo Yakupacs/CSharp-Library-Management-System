@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Gorsel_ProgramlamaModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="tbl_Kitaplar">
+    <Key>
+      <PropertyRef Name="KitapID" />
+    </Key>
+    <Property Name="KitapID" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="KitapAdi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="KitapYazari" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="KitapYayinEvi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="KitapBasimYili" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="KitapSayfaSayisi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="tbl_İngilizce">
+    <Key>
+      <PropertyRef Name="İngilizce" />
+      <PropertyRef Name="Türkçe" />
+    </Key>
+    <Property Name="İngilizce" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Türkçe" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_login">
+    <Key>
+      <PropertyRef Name="username" />
+      <PropertyRef Name="password" />
+    </Key>
+    <Property Name="username" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="Gorsel_ProgramlamaEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tbl_Kitaplar" EntityType="Self.tbl_Kitaplar" />
+    <EntitySet Name="tbl_İngilizce" EntityType="Self.tbl_İngilizce" />
+    <EntitySet Name="tbl_login" EntityType="Self.tbl_login" />
+  </EntityContainer>
+</Schema>

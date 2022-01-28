@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ProjeModelStoreContainer" CdmEntityContainer="ProjeEntities">
+    <EntitySetMapping Name="tbl_Emanet">
+      <EntityTypeMapping TypeName="ProjeModel.tbl_Emanet">
+        <MappingFragment StoreEntitySet="tbl_Emanet">
+          <ScalarProperty Name="EmanetID" ColumnName="EmanetID" />
+          <ScalarProperty Name="EmanetKitapID" ColumnName="EmanetKitapID" />
+          <ScalarProperty Name="EmanetUyeTC" ColumnName="EmanetUyeTC" />
+          <ScalarProperty Name="EmanetPersonelID" ColumnName="EmanetPersonelID" />
+          <ScalarProperty Name="EmanetVerilenTarih" ColumnName="EmanetVerilenTarih" />
+          <ScalarProperty Name="EmanetAlınanTarih" ColumnName="EmanetAlınanTarih" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Kitap">
+      <EntityTypeMapping TypeName="ProjeModel.tbl_Kitap">
+        <MappingFragment StoreEntitySet="tbl_Kitap">
+          <ScalarProperty Name="KitapID" ColumnName="KitapID" />
+          <ScalarProperty Name="KitapAdı" ColumnName="KitapAdı" />
+          <ScalarProperty Name="KitapYazarı" ColumnName="KitapYazarı" />
+          <ScalarProperty Name="KitapYayınevi" ColumnName="KitapYayınevi" />
+          <ScalarProperty Name="KitapSayfaSayısı" ColumnName="KitapSayfaSayısı" />
+          <ScalarProperty Name="KitapKategori" ColumnName="KitapKategori" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Personel">
+      <EntityTypeMapping TypeName="ProjeModel.tbl_Personel">
+        <MappingFragment StoreEntitySet="tbl_Personel">
+          <ScalarProperty Name="PersonelID" ColumnName="PersonelID" />
+          <ScalarProperty Name="PersonelAdı" ColumnName="PersonelAdı" />
+          <ScalarProperty Name="PersonelSoyadı" ColumnName="PersonelSoyadı" />
+          <ScalarProperty Name="PersonelTC" ColumnName="PersonelTC" />
+          <ScalarProperty Name="PersonelTelefon" ColumnName="PersonelTelefon" />
+          <ScalarProperty Name="PersonelAçıkAdres" ColumnName="PersonelAçıkAdres" />
+          <ScalarProperty Name="PersonelMail" ColumnName="PersonelMail" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Uye">
+      <EntityTypeMapping TypeName="ProjeModel.tbl_Uye">
+        <MappingFragment StoreEntitySet="tbl_Uye">
+          <ScalarProperty Name="UyeTC" ColumnName="UyeTC" />
+          <ScalarProperty Name="UyeAdı" ColumnName="UyeAdı" />
+          <ScalarProperty Name="UyeSoyadı" ColumnName="UyeSoyadı" />
+          <ScalarProperty Name="UyeTelefon" ColumnName="UyeTelefon" />
+          <ScalarProperty Name="UyeAçıkAdres" ColumnName="UyeAçıkAdres" />
+          <ScalarProperty Name="UyeMail" ColumnName="UyeMail" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="ToplamEmanetTablosu" FunctionName="ProjeModel.Store.ToplamEmanetTablosu">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ProjeModel.ToplamEmanetTablosu_Result">
+          <ScalarProperty Name="EmanetID" ColumnName="EmanetID" />
+          <ScalarProperty Name="ÜyeTC" ColumnName="ÜyeTC" />
+          <ScalarProperty Name="Üye" ColumnName="Üye" />
+          <ScalarProperty Name="Kitap" ColumnName="Kitap" />
+          <ScalarProperty Name="EmanetBaşlangıç" ColumnName="EmanetBaşlangıç" />
+          <ScalarProperty Name="EmanetBitiş" ColumnName="EmanetBitiş" />
+          <ScalarProperty Name="Personel" ColumnName="Personel" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="tbl_PersonelGiriş">
+      <EntityTypeMapping TypeName="ProjeModel.tbl_PersonelGiriş">
+        <MappingFragment StoreEntitySet="tbl_PersonelGiriş">
+          <ScalarProperty Name="PersonelGirişSoyadı" ColumnName="PersonelGirişSoyadı" />
+          <ScalarProperty Name="PersonelGirişAdı" ColumnName="PersonelGirişAdı" />
+          <ScalarProperty Name="PersonelGirişŞifre" ColumnName="PersonelGirişŞifre" />
+          <ScalarProperty Name="PersonelGirişID" ColumnName="PersonelGirişID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

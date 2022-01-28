@@ -1,0 +1,63 @@
+
+(ÜYE GÜNCELLENDİ) 
+Güncellenen Üye TC: 12345678916
+Üye Adı Soyadı: Melisa Tekin
+Üye Telefon NO: 5355355352
+Üye Adres: Mersin
+Üye Mail: melisatekin@gmail.com
+Tarih:23.01.2022 02:21:54
+Üye Güncellendi.
+
+(ÜYE GÜNCELLENDİ) 
+Güncellenen Üye TC: 12345678914
+Üye Adı Soyadı: Muhammed Ali Açış
+Üye Telefon NO: 5345345311
+Üye Adres: Adana
+Üye Mail: muhammedacis
+Tarih:26.01.2022 19:39:28
+Üye Güncellendi.
+
+(ÜYE GÜNCELLENDİ) 
+Güncellenen Üye TC: 12345678920
+Üye Adı Soyadı: Selin Eralp
+Üye Telefon NO: 5355354842
+Üye Adres: Zonguldak
+Üye Mail: selineralp
+Tarih:27.01.2022 03:06:08
+Üye Güncellendi.
+
+(ÜYE EKLENDİ) 
+Eklenen Üye TC: 
+Eklenen Üye Adı Soyadı: Pelin Tok
+Tarih: 27.01.2022 03:14:11
+Üye Eklendi.
+
+(ÜYE EKLENDİ) 
+Eklenen Üye TC: 11111111111
+Eklenen Üye Adı Soyadı: a b
+Tarih: 27.01.2022 03:30:25
+Üye Eklendi.
+
+(ÜYE SİLİNDİ) 
+Silinen Üye TC: 
+Silinen Üye Adı Soyadı:  
+Tarih: 27.01.2022 03:30:31
+Üye Silindi.
+
+(ÜYE GÜNCELLENDİ) 
+Güncellenen Üye TC: 12345678916
+Üye Adı Soyadı: Nazlı Tekin
+Üye Telefon NO: 5355355352
+Üye Adres: Mersin
+Üye Mail: melisatekin
+Tarih:28.01.2022 19:22:56
+Üye Güncellendi.
+
+(ÜYE GÜNCELLENDİ) 
+Güncellenen Üye TC: 12345678917
+Üye Adı Soyadı: Ahmet Demir
+Üye Telefon NO: 5355355151
+Üye Adres: Siirt
+Üye Mail: ahmetdemir
+Tarih:28.01.2022 19:23:43
+Üye Güncellendi.

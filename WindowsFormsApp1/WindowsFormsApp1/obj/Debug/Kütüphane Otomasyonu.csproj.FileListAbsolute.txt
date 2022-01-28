@@ -1,0 +1,114 @@
+C:\Users\Yakup\source\repos\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\Yakup\source\repos\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\Yakup\source\repos\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\Yakup\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Kütüphane Otomasyonu.csproj.AssemblyReference.cache
+C:\Users\Yakup\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\Yakup\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Kütüphane Otomasyonu.csproj.GenerateResource.cache
+C:\Users\Yakup\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Kütüphane Otomasyonu.csproj.CoreCompileInputs.cache
+C:\Users\Yakup\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\Yakup\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\Yakup\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.PersonelGirişi.resources
+C:\Users\Yakup\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Kütüphane Otomasyonu.csproj.SuggestedBindingRedirects.cache
+C:\Users\Yakup\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.KitapEkle.resources
+C:\Users\Yakup\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Anasayfa.resources
+C:\Users\Yakup\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.KitapSorgulama.resources
+C:\Users\Yakup\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.PersonelMenusu.resources
+C:\Users\Yakup\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.GuvenlikIslemleri.resources
+C:\Users\Yakup\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.UyeGiris.resources
+C:\Users\Yakup\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.GorunumAyarlari.resources
+C:\Users\Yakup\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.UyeKayitSistemi.resources
+C:\Users\Yakup\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.EmanetIslemleri.resources
+C:\Users\Yakup\Desktop\Yeni klasör (2)\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\Yakup\Desktop\Yeni klasör (2)\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\Yakup\Desktop\Yeni klasör (2)\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\Yakup\Desktop\Yeni klasör (2)\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Kütüphane Otomasyonu.csproj.AssemblyReference.cache
+C:\Users\Yakup\Desktop\Yeni klasör (2)\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Kütüphane Otomasyonu.csproj.SuggestedBindingRedirects.cache
+C:\Users\Yakup\Desktop\Yeni klasör (2)\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.EmanetIslemleri.resources
+C:\Users\Yakup\Desktop\Yeni klasör (2)\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.PersonelMenusu.resources
+C:\Users\Yakup\Desktop\Yeni klasör (2)\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.GuvenlikIslemleri.resources
+C:\Users\Yakup\Desktop\Yeni klasör (2)\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.KitapSorgulama.resources
+C:\Users\Yakup\Desktop\Yeni klasör (2)\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.UyeGiris.resources
+C:\Users\Yakup\Desktop\Yeni klasör (2)\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.KitapEkle.resources
+C:\Users\Yakup\Desktop\Yeni klasör (2)\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.GorunumAyarlari.resources
+C:\Users\Yakup\Desktop\Yeni klasör (2)\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.PersonelGirişi.resources
+C:\Users\Yakup\Desktop\Yeni klasör (2)\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Anasayfa.resources
+C:\Users\Yakup\Desktop\Yeni klasör (2)\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.UyeKayitSistemi.resources
+C:\Users\Yakup\Desktop\Yeni klasör (2)\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\Yakup\Desktop\Yeni klasör (2)\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Kütüphane Otomasyonu.csproj.GenerateResource.cache
+C:\Users\Yakup\Desktop\Yeni klasör (2)\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Kütüphane Otomasyonu.csproj.CoreCompileInputs.cache
+C:\Users\Yakup\Desktop\Yeni klasör (2)\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\Yakup\Desktop\Yeni klasör (2)\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\Yakup\source\repos\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\Yakup\source\repos\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\Yakup\source\repos\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\Yakup\source\repos\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Kütüphane Otomasyonu.csproj.AssemblyReference.cache
+C:\Users\Yakup\source\repos\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Kütüphane Otomasyonu.csproj.SuggestedBindingRedirects.cache
+C:\Users\Yakup\source\repos\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.PersonelMenusu.resources
+C:\Users\Yakup\source\repos\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.GuvenlikIslemleri.resources
+C:\Users\Yakup\source\repos\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.KitapSorgulama.resources
+C:\Users\Yakup\source\repos\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.KitapEkle.resources
+C:\Users\Yakup\source\repos\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.GorunumAyarlari.resources
+C:\Users\Yakup\source\repos\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.PersonelGirişi.resources
+C:\Users\Yakup\source\repos\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Anasayfa.resources
+C:\Users\Yakup\source\repos\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\Yakup\source\repos\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Kütüphane Otomasyonu.csproj.GenerateResource.cache
+C:\Users\Yakup\source\repos\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Kütüphane Otomasyonu.csproj.CoreCompileInputs.cache
+C:\Users\Yakup\source\repos\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\Yakup\source\repos\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\Yakup\source\repos\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\EntityFramework.dll
+C:\Users\Yakup\source\repos\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Yakup\source\repos\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\EntityFramework.xml
+C:\Users\Yakup\source\repos\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Yakup\source\repos\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Kütüphane Otomasyonu.csproj.CopyComplete
+C:\Users\Yakup\source\repos\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.WebBrowser.resources
+C:\Users\Yakup\source\repos\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Üyeİşlemleri.resources
+C:\Users\Yakup\source\repos\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Emanetİşlemleri.resources
+C:\Users\Yakup\source\repos\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Personelİşlemleri.resources
+C:\Users\Yakup\Desktop\Kütüphane Yedek\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\Yakup\Desktop\Kütüphane Yedek\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\Yakup\Desktop\Kütüphane Yedek\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\Yakup\Desktop\Kütüphane Yedek\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\EntityFramework.dll
+C:\Users\Yakup\Desktop\Kütüphane Yedek\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Yakup\Desktop\Kütüphane Yedek\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\EntityFramework.xml
+C:\Users\Yakup\Desktop\Kütüphane Yedek\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Yakup\Desktop\Kütüphane Yedek\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Kütüphane Otomasyonu.csproj.AssemblyReference.cache
+C:\Users\Yakup\Desktop\Kütüphane Yedek\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Kütüphane Otomasyonu.csproj.SuggestedBindingRedirects.cache
+C:\Users\Yakup\Desktop\Kütüphane Yedek\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Emanetİşlemleri.resources
+C:\Users\Yakup\Desktop\Kütüphane Yedek\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Personelİşlemleri.resources
+C:\Users\Yakup\Desktop\Kütüphane Yedek\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.WebBrowser.resources
+C:\Users\Yakup\Desktop\Kütüphane Yedek\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.PersonelMenusu.resources
+C:\Users\Yakup\Desktop\Kütüphane Yedek\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.KitapSorgulama.resources
+C:\Users\Yakup\Desktop\Kütüphane Yedek\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.KitapEkle.resources
+C:\Users\Yakup\Desktop\Kütüphane Yedek\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.PersonelGirişi.resources
+C:\Users\Yakup\Desktop\Kütüphane Yedek\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Anasayfa.resources
+C:\Users\Yakup\Desktop\Kütüphane Yedek\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\Yakup\Desktop\Kütüphane Yedek\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Üyeİşlemleri.resources
+C:\Users\Yakup\Desktop\Kütüphane Yedek\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Kütüphane Otomasyonu.csproj.GenerateResource.cache
+C:\Users\Yakup\Desktop\Kütüphane Yedek\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Kütüphane Otomasyonu.csproj.CoreCompileInputs.cache
+C:\Users\Yakup\Desktop\Kütüphane Yedek\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Kütüphane Otomasyonu.csproj.CopyComplete
+C:\Users\Yakup\Desktop\Kütüphane Yedek\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\Yakup\Desktop\Kütüphane Yedek\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\Yakup\Desktop\Kütüphane Programı\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\Yakup\Desktop\Kütüphane Programı\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\Yakup\Desktop\Kütüphane Programı\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\Yakup\Desktop\Kütüphane Programı\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\EntityFramework.dll
+C:\Users\Yakup\Desktop\Kütüphane Programı\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Yakup\Desktop\Kütüphane Programı\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\EntityFramework.xml
+C:\Users\Yakup\Desktop\Kütüphane Programı\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Yakup\Desktop\Kütüphane Programı\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Kütüphane Otomasyonu.csproj.AssemblyReference.cache
+C:\Users\Yakup\Desktop\Kütüphane Programı\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Kütüphane Otomasyonu.csproj.SuggestedBindingRedirects.cache
+C:\Users\Yakup\Desktop\Kütüphane Programı\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Emanetİşlemleri.resources
+C:\Users\Yakup\Desktop\Kütüphane Programı\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Personelİşlemleri.resources
+C:\Users\Yakup\Desktop\Kütüphane Programı\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.WebBrowser.resources
+C:\Users\Yakup\Desktop\Kütüphane Programı\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.PersonelMenusu.resources
+C:\Users\Yakup\Desktop\Kütüphane Programı\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.KitapSorgulama.resources
+C:\Users\Yakup\Desktop\Kütüphane Programı\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.KitapEkle.resources
+C:\Users\Yakup\Desktop\Kütüphane Programı\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.PersonelGirişi.resources
+C:\Users\Yakup\Desktop\Kütüphane Programı\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Anasayfa.resources
+C:\Users\Yakup\Desktop\Kütüphane Programı\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\Yakup\Desktop\Kütüphane Programı\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Üyeİşlemleri.resources
+C:\Users\Yakup\Desktop\Kütüphane Programı\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Kütüphane Otomasyonu.csproj.GenerateResource.cache
+C:\Users\Yakup\Desktop\Kütüphane Programı\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Kütüphane Otomasyonu.csproj.CoreCompileInputs.cache
+C:\Users\Yakup\Desktop\Kütüphane Programı\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Kütüphane Otomasyonu.csproj.CopyComplete
+C:\Users\Yakup\Desktop\Kütüphane Programı\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\Yakup\Desktop\Kütüphane Programı\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb

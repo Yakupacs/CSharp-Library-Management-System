@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="GorselProgramlamaModel1StoreContainer" CdmEntityContainer="GorselProgramlamaEntities2f">
+    <EntitySetMapping Name="tbl_Emanet">
+      <EntityTypeMapping TypeName="GorselProgramlamaModel1.tbl_Emanet">
+        <MappingFragment StoreEntitySet="tbl_Emanet">
+          <ScalarProperty Name="emanetVerilme" ColumnName="emanetVerilme" />
+          <ScalarProperty Name="emanetAlinma" ColumnName="emanetAlinma" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Kitaplar">
+      <EntityTypeMapping TypeName="GorselProgramlamaModel1.tbl_Kitaplar">
+        <MappingFragment StoreEntitySet="tbl_Kitaplar">
+          <ScalarProperty Name="kitapId" ColumnName="kitapId" />
+          <ScalarProperty Name="kitapAdi" ColumnName="kitapAdi" />
+          <ScalarProperty Name="kitapYazari" ColumnName="kitapYazari" />
+          <ScalarProperty Name="kitapYayinevi" ColumnName="kitapYayinevi" />
+          <ScalarProperty Name="kitapSayfaSayisi" ColumnName="kitapSayfaSayisi" />
+          <ScalarProperty Name="kitapKategori" ColumnName="kitapKategori" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Musteri">
+      <EntityTypeMapping TypeName="GorselProgramlamaModel1.tbl_Musteri">
+        <MappingFragment StoreEntitySet="tbl_Musteri">
+          <ScalarProperty Name="musteriTc" ColumnName="musteriTc" />
+          <ScalarProperty Name="musteriAd" ColumnName="musteriAd" />
+          <ScalarProperty Name="musteriSoyad" ColumnName="musteriSoyad" />
+          <ScalarProperty Name="musteriCinsiyet" ColumnName="musteriCinsiyet" />
+          <ScalarProperty Name="musteriYas" ColumnName="musteriYas" />
+          <ScalarProperty Name="musteriTelefon" ColumnName="musteriTelefon" />
+          <ScalarProperty Name="musteriEposta" ColumnName="musteriEposta" />
+          <ScalarProperty Name="musteriAdres" ColumnName="musteriAdres" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Personel">
+      <EntityTypeMapping TypeName="GorselProgramlamaModel1.tbl_Personel">
+        <MappingFragment StoreEntitySet="tbl_Personel">
+          <ScalarProperty Name="personelId" ColumnName="personelId" />
+          <ScalarProperty Name="personelAd" ColumnName="personelAd" />
+          <ScalarProperty Name="personelSoyad" ColumnName="personelSoyad" />
+          <ScalarProperty Name="personelCinsiyet" ColumnName="personelCinsiyet" />
+          <ScalarProperty Name="personelYas" ColumnName="personelYas" />
+          <ScalarProperty Name="personelTelefon" ColumnName="personelTelefon" />
+          <ScalarProperty Name="personelEposta" ColumnName="personelEposta" />
+          <ScalarProperty Name="personelAdres" ColumnName="personelAdres" />
+          <ScalarProperty Name="personelGorev" ColumnName="personelGorev" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

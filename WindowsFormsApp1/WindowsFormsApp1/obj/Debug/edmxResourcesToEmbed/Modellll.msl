@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ProjeModelStoreContainer" CdmEntityContainer="ProjeEntities1">
+    <EntitySetMapping Name="tbl_Kitap">
+      <EntityTypeMapping TypeName="ProjeModel.tbl_Kitap">
+        <MappingFragment StoreEntitySet="tbl_Kitap">
+          <ScalarProperty Name="KitapID" ColumnName="KitapID" />
+          <ScalarProperty Name="KitapAdı" ColumnName="KitapAdı" />
+          <ScalarProperty Name="KitapYazarı" ColumnName="KitapYazarı" />
+          <ScalarProperty Name="KitapYayınevi" ColumnName="KitapYayınevi" />
+          <ScalarProperty Name="KitapSayfaSayısı" ColumnName="KitapSayfaSayısı" />
+          <ScalarProperty Name="KitapKategori" ColumnName="KitapKategori" />
+          <ScalarProperty Name="KitapEmanetMi" ColumnName="KitapEmanetMi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Personel">
+      <EntityTypeMapping TypeName="ProjeModel.tbl_Personel">
+        <MappingFragment StoreEntitySet="tbl_Personel">
+          <ScalarProperty Name="PersonelID" ColumnName="PersonelID" />
+          <ScalarProperty Name="PersonelAdı" ColumnName="PersonelAdı" />
+          <ScalarProperty Name="PersonelSoyadı" ColumnName="PersonelSoyadı" />
+          <ScalarProperty Name="PersonelTC" ColumnName="PersonelTC" />
+          <ScalarProperty Name="PersonelTelefon" ColumnName="PersonelTelefon" />
+          <ScalarProperty Name="PersonelAçıkAdres" ColumnName="PersonelAçıkAdres" />
+          <ScalarProperty Name="PersonelMail" ColumnName="PersonelMail" />
+          <ScalarProperty Name="PersonelKullanıcıAdı" ColumnName="PersonelKullanıcıAdı" />
+          <ScalarProperty Name="PersonelŞifre" ColumnName="PersonelŞifre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Uye">
+      <EntityTypeMapping TypeName="ProjeModel.tbl_Uye">
+        <MappingFragment StoreEntitySet="tbl_Uye">
+          <ScalarProperty Name="UyeTC" ColumnName="UyeTC" />
+          <ScalarProperty Name="UyeAdı" ColumnName="UyeAdı" />
+          <ScalarProperty Name="UyeSoyadı" ColumnName="UyeSoyadı" />
+          <ScalarProperty Name="UyeTelefon" ColumnName="UyeTelefon" />
+          <ScalarProperty Name="UyeAçıkAdres" ColumnName="UyeAçıkAdres" />
+          <ScalarProperty Name="UyeMail" ColumnName="UyeMail" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
